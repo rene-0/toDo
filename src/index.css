@@ -17,6 +17,10 @@ body {
   cursor: pointer;
 }
 
+.app-default-button:hover {
+  background-color: #2a6d97;
+}
+
 .app-default-box-shadow {
   box-shadow: 0px 2px 6px #00000030;
 }

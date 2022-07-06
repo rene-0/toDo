@@ -1,0 +1,61 @@
+.reminder {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.reminder .reminder-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 75px;
+  grid-template-areas: "header-name header-date header-action";
+  background-color: #457B9D;
+  color: white;
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+  font-size: 20px;
+}
+
+.reminder .reminder-header .reminder-header-name {
+  font-weight: 900;
+  text-align: left;
+  grid-area: header-name;
+  line-height: 1;
+}
+
+.reminder .reminder-header .reminder-header-date {
+  grid-area: header-date;
+}
+
+.reminder .reminder-header .reminder-header-action {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  grid-area: header-action;
+}
+
+.reminder .reminder-header .reminder-header-action svg {
+  cursor: pointer;
+}
+
+.reminder .reminder-header .reminder-header-action svg:hover {
+  opacity: 0.8;
+}
+
+.reminder .reminder-header .reminder-header-date,
+.reminder .reminder-header .reminder-header-action {
+  text-align: right;
+  font-weight: lighter;
+}
+
+.reminder-content {
+  padding: 15px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+  .reminder .reminder-header {
+    grid-template-columns: 2fr 100px;
+    grid-template-areas:
+    "header-name header-date"
+    "header-name header-action";
+  }
+}

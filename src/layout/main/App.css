@@ -1,5 +1,6 @@
 .app {
   --button-size: 35px;
+  --app-max-width: 600px;
   text-align: center;
   min-height: 100vh;
   min-width: 100vw;
@@ -11,13 +12,16 @@
   flex-direction: column;
 }
 
-.app .app-header {
+/* .app .app-header {
   display: grid;
   grid-template-columns: 35px 1fr;
   gap: 20px;
-  /* display: flex;
-  justify-content: space-around; */
-  width: 50%;
+  width: 100%;
+  max-width: var(--app-max-width);
+}
+
+.app .app-header .app-button:hover {
+  background-color: #417fa5;
 }
 
 .app .search-container {
@@ -42,47 +46,18 @@
   width: 100%;
 }
 
-.app-button:hover {
-  background-color: #8dafc5;
-}
+/*  Reminders  */
 
-.reminders {
+/* .reminders {
   margin-top: 15px;
-  width: 50%;
-}
+  width: 100%;
+  max-width: var(--app-max-width);
+} */
 
-.reminders .reminder {
-  border-radius: 5px;
-}
+/*  Reminders  */
 
-.reminders .reminder .reminder-header {
-  display: grid;
-  grid-template-columns: 2fr 1fr 100px;
-  background-color: #457B9D;
-  color: white;
-  padding: 10px 0px 10px 10px;
-  border-radius: 5px 5px 0px 0px;
-  font-size: 20px;
-}
-
-.reminders .reminder .reminder-header .reminder-header-name {
-  font-weight: 900;
-  text-align: left;
-}
-
-.reminders .reminder .reminder-header .reminder-header-action {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 10px 0px 15px;
-}
-
-.reminders .reminder .reminder-header .reminder-header-date,
-.reminders .reminder .reminder-header .reminder-header-action {
-  text-align: right;
-  font-weight: lighter;
-}
-
-.reminders .reminder-content {
-  padding: 15px;
-  text-align: justify;
+@media only screen and (max-width: 500px) {
+  .app {
+    padding: 10px;
+  }  
 }

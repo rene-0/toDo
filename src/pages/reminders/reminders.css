@@ -1,0 +1,41 @@
+.reminders .app-header {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: var(--app-max-width);
+}
+
+.reminders .app-header .app-button:hover {
+  background-color: #417fa5;
+}
+
+.reminders .search-container {
+  display: grid;
+  grid-template-columns: 1fr 35px;
+  gap: 5px;
+}
+
+.reminders .search-container .search-input-container {
+  display: flex;
+  height: var(--button-size);
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: #457B9D;
+  border-radius: 5px;
+}
+
+.reminders .search-container .search-input-container input {
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/*  Reminders  */
+
+.reminders-container {
+  margin-top: 15px;
+  width: 100%;
+  max-width: var(--app-max-width);
+}
