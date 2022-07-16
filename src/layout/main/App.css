@@ -3,7 +3,7 @@
   --app-max-width: 600px;
   text-align: center;
   min-height: 100vh;
-  min-width: 100vw;
+  /* min-width: 100vw; */
   background-color: #FAFDFF;
   padding: 25px;
   box-sizing: border-box;

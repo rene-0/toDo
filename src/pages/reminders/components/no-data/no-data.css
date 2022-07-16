@@ -1,0 +1,22 @@
+.no-data {
+  /* padding: 10px; */
+  width: 600px;
+  border-radius: 5px;
+}
+
+.no-data h2 {
+  display: grid;
+  width: 600px;
+  background-color: #457B9D;
+  color: white;
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+  box-sizing: border-box;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.no-data p {
+  margin: 0px;
+  padding: 10px;
+}

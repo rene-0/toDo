@@ -1,4 +1,5 @@
 import { AiFillEdit, AiOutlineCheck, AiOutlineClose } from 'react-icons/ai'
+import { convertDbDateToCommonDate } from '../../helpers/dates/convert-db-date-to-common-date'
 import './reminder.css'
 
 type Props = {
@@ -12,7 +13,7 @@ export function Reminder ({ name, date, description }: Props): JSX.Element {
     <div className='reminder app-default-box-shadow'>
       <div className="reminder-header">
         <div className="reminder-header-name">{name}</div>
-        <div className="reminder-header-date">{date}</div>
+        <div className="reminder-header-date">{convertDbDateToCommonDate(date, '/')}</div>
         <div className="reminder-header-action">
           <AiOutlineCheck/>
           <AiFillEdit/>
