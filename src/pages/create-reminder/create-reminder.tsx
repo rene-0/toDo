@@ -20,13 +20,15 @@ export function CreateReminder () {
 
   const createReminder = async (): Promise<void> => {
     const remoteCreateReminder = new RemoteCreateReminders()
-    const createdReminder = await remoteCreateReminder.create({ ...reminder, reminderCategoryId: '0' })
-
-    if (createdReminder) {
-      setIsSuccess(true)
-      setShowWarning(true)
-      setReminder(emptyReminder)
-    } else {
+    try {
+      const createdReminder = await remoteCreateReminder.create({ ...reminder, reminderCategoryId: '0' })
+  
+      if (createdReminder) {
+        setIsSuccess(true)
+        setShowWarning(true)
+        setReminder(emptyReminder)
+      }
+    } catch (error) {
       setIsSuccess(false)
       setShowWarning(true)
     }
