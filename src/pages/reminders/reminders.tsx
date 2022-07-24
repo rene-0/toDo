@@ -1,5 +1,6 @@
 import React, { ChangeEvent, useEffect, useMemo, useState } from 'react'
 import { AiOutlinePlus, AiOutlineSearch } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 import { Reminder } from '../../components/reminder/reminder'
 import { SearchReminders } from '../../data/interfaces/search-reminders-interface'
 import { RemoteSearchReminders } from '../../data/usecases/remote-search-reminders'
@@ -47,9 +48,11 @@ export function Reminders (): JSX.Element {
   return (
     <div className='reminders'>
       <header className="app-header">
+        <Link to='./create'>
         <button className='app-default-button app-default-box-shadow'>
           <AiOutlinePlus />
         </button>
+        </Link>
         <div className='search-container'>
           <div className='search-input-container app-default-box-shadow'>
             <input

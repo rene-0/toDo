@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Main from './layout/main/App'
+import { CreateReminder } from './pages/create-reminder/create-reminder'
 import { Reminders } from './pages/reminders/reminders'
 
 function Router() {
@@ -8,7 +9,7 @@ function Router() {
       <Routes>
         <Route path="/" element={<Main />}>
           <Route path="/" element={<Reminders />} />
-          <Route path="/create" element={<>teste</>} />
+          <Route path="/create" element={<CreateReminder />} />
         </Route>
       </Routes>
     </BrowserRouter>

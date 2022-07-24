@@ -3,5 +3,6 @@ export type Reminders = {
   description: string,
   complete: boolean,
   startDate: string,
-  endDate: string
+  endDate: string,
+  reminderCategoryId: string
 }

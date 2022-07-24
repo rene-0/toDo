@@ -1,0 +1,23 @@
+.form-warning {
+  margin-top: 15px;
+  display: flex;
+  min-height: 40px;
+  border-radius: 5px;
+  border: 0.5px solid #00000022;
+}
+
+.form-warning .warning-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  background-color: #457b9d;
+  color: white;
+  font-size: 28px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.form-warning .warning-description {
+  padding: 5px;
+  width: 100%;
+}

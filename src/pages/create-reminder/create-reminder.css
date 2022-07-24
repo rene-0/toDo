@@ -1,0 +1,107 @@
+.create-reminder .reminder .reminder-header {
+  grid-template-areas:
+  "header-name header-start-date header-start-date header-complete"
+  "header-name header-end-date header-end-date header-complete";
+}
+
+.reminder-name-input.reminder-header-name {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+}
+
+.reminder-name-input.reminder-header-name::placeholder {
+  color: white;
+}
+
+.reminder-name-input.reminder-header-name:focus {
+  outline: none;
+}
+
+.reminder-date-input.reminder-header-date {
+  border: none;
+  font-size: 20px;
+  color: white;
+  background-color: transparent;
+}
+
+.reminder-complete-input {
+  display: flex;
+  align-items: center;
+  grid-area: header-complete;
+  height: 100%;
+  width: 20px;
+  overflow: hidden;
+}
+
+.reminder-complete-input .reminder-complete-icon {
+  cursor: pointer;
+}
+
+.reminder-complete-input .reminder-complete-check-box {
+  display: none;
+}
+
+.reminder .reminder-header .reminder-header-date.start {
+  grid-area: header-start-date;
+}
+
+.reminder .reminder-header .reminder-header-date.end {
+  grid-area: header-end-date;
+}
+
+.reminder-date-input.reminder-header-date:focus {
+  outline: none;
+}
+
+.reminder-date-input.reminder-header-date::-webkit-calendar-picker-indicator {
+  /* color: white; */
+  filter: invert(1);
+}
+
+.reminder-content-input {
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  font-size: 16px;
+  resize: none;
+}
+
+.reminder-content-input::-webkit-scrollbar {
+  width: 5px;
+}
+
+.reminder-content-input::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+.reminder-content-input::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+.reminder-content-input::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.reminder-content-input:focus {
+  outline: none;
+}
+
+.reminder-content-input::placeholder {
+  color: black;
+}
+
+.create-reminder-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.create-reminder-buttons .go-back {
+  width: 70px;
+}
+
+.create-reminder-buttons .submit {
+  width: calc(100% - 80px);
+}
