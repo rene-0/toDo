@@ -1,9 +1,8 @@
 .app {
   --button-size: 35px;
   --app-max-width: 600px;
-  text-align: center;
+  max-width: var(--app-max-width);
   min-height: 100vh;
-  /* min-width: 100vw; */
   background-color: #FAFDFF;
   padding: 25px;
   box-sizing: border-box;
@@ -11,50 +10,6 @@
   align-items: center;
   flex-direction: column;
 }
-
-/* .app .app-header {
-  display: grid;
-  grid-template-columns: 35px 1fr;
-  gap: 20px;
-  width: 100%;
-  max-width: var(--app-max-width);
-}
-
-.app .app-header .app-button:hover {
-  background-color: #417fa5;
-}
-
-.app .search-container {
-  display: grid;
-  grid-template-columns: 1fr 35px;
-  gap: 5px;
-}
-
-.app .search-container .search-input-container {
-  display: flex;
-  height: var(--button-size);
-  width: 100%;
-  padding: 5px;
-  box-sizing: border-box;
-  background-color: #457B9D;
-  border-radius: 5px;
-}
-
-.app .search-container .search-input-container input {
-  border: none;
-  border-radius: 5px;
-  width: 100%;
-}
-
-/*  Reminders  */
-
-/* .reminders {
-  margin-top: 15px;
-  width: 100%;
-  max-width: var(--app-max-width);
-} */
-
-/*  Reminders  */
 
 @media only screen and (max-width: 500px) {
   .app {

@@ -3,6 +3,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .app-default-button {
   display: flex;
   align-items: center;
