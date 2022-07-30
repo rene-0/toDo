@@ -3,7 +3,6 @@
   --app-max-width: 600px;
   max-width: var(--app-max-width);
   min-height: 100vh;
-  background-color: #FAFDFF;
   padding: 25px;
   box-sizing: border-box;
   display: flex;
