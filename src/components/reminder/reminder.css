@@ -32,6 +32,12 @@
   grid-area: header-action;
 }
 
+.reminder .reminder-header .reminder-header-action .complete-action {
+  width: 20px;
+  overflow: hidden;
+  height: 20px;
+}
+
 .reminder .reminder-header .reminder-header-action svg {
   cursor: pointer;
 }

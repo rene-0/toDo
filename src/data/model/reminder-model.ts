@@ -1,8 +1,9 @@
 export type Reminders = {
-  name: string,
-  description: string,
-  complete: boolean,
-  startDate: string,
-  endDate: string,
+  id: string
+  name: string
+  description: string
+  complete: boolean
+  startDate: string
+  endDate: string
   reminderCategoryId: string
 }

@@ -2,7 +2,7 @@ import { ChangeEvent, useEffect, useState } from 'react'
 import { AiOutlineArrowLeft, AiOutlineCheck, AiOutlineClose } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import { Fade } from '../../components/transitions/fade/fade'
-import { Reminders } from '../../data/model/reminder-model'
+import { CreateReminder as CreateReminderInterface } from '../../data/interfaces/create-reminder-interface'
 import { RemoteCreateReminders } from '../../data/usecases/remote-create-reminder'
 import { FormWarning } from './components/form-warning/form-warning'
 import './create-reminder.css'
@@ -10,7 +10,7 @@ import './create-reminder.css'
 const emptyReminder = { name: '', description: '', complete: false, endDate: '', startDate: '', reminderCategoryId: '' }
 
 export function CreateReminder () {
-  const [reminder, setReminder] = useState<Reminders>(emptyReminder)
+  const [reminder, setReminder] = useState<CreateReminderInterface.Model>(emptyReminder)
   const [showWarning, setShowWarning] = useState(false)
   const [isSuccess, setIsSuccess] = useState(false)
 

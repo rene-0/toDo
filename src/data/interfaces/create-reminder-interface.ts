@@ -5,7 +5,7 @@ export interface CreateReminder {
 }
 
 export namespace CreateReminder {
-  export type Params = Reminders
+  export type Params = Omit<Reminders, 'id'>
 
-  export type Model = Reminders
+  export type Model = Omit<Reminders, 'id'>
 }

@@ -34,9 +34,11 @@ export function Reminders (): JSX.Element {
     return reminders.map((reminder, index) => (
       <Reminder
         key={`reminders-${index}`}
+        id={reminder.id}
         name={reminder.name}
         date={reminder.endDate}
         description={reminder.description}
+        complete={reminder.complete}
       />
     ))
   }, [reminders])
